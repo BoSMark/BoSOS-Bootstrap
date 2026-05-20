@@ -6,16 +6,30 @@ Most companies add AI tools on top of an operating system nobody has written dow
 
 The Bootstrap skill fixes the foundation first.
 
+**Current version: v2.0**
+
+---
 
 ## What this skill does
 
 **Bootstrap** models your company OS from public information in under an hour.
 
-It produces a first draft of your strategy layer, agent roles, and decision governance. Your folder structure becomes your system. The files become the memory. Think of it as the AI doing its homework on your company before you meet. From there, the AI starts to understand your strategic goals, identify gaps, and surface opportunities and threats specific to your business.
+It produces a first draft of your strategy layer, agent roles, and decision governance — plus a `BOOTSTRAP_SUMMARY.md` at the end that tells you exactly what to do next, what blocks your agents from operating, and a seeded first mission so the system feels real from day one.
+
+Think of it as the AI doing its homework on your company before you meet.
 
 This is the starting point. Run Bootstrap before anything else.
 
 > **Bootstrap vs Workshop:** Bootstrap creates a first draft from public information — fast, external, minimal input from you. Workshop refines that draft using your insider knowledge. Run Bootstrap first, then Workshop to make it real.
+
+---
+
+## What's new in v2.0
+
+- **Bootstrap summary** — you finish knowing exactly what to do next, not just with a folder of documents
+- **Seeded first mission** — your agents get a concrete first job from day one
+- **Memory layer** — agents compound knowledge over time instead of starting fresh each session
+- **Hardened governance** — confidential content stays out of git; every decision names what it affects
 
 ---
 
@@ -35,15 +49,15 @@ Your folder structure is your system. The files are the memory.
 
 ## Getting started
 
-The Bootstrap skill file is maintained in the canonical repo:
+1. Download `agent-os-bootstrap.skill` from the [BoS-OS-Start latest release](https://github.com/BoSMark/BoS_OS_Start/releases/latest)
+2. In Cowork, click **Customize** → **Skills** → **Add skill** → select the downloaded file
+3. Open Cowork, create a project, select a folder, then say "Bootstrap my company OS"
 
-**→ [BoS-OS-Start](https://github.com/BoSMark/BoS_OS_Start)**
+> **Important:** Bootstrap must be run inside a Cowork project with a folder selected. If you run it from a general Claude conversation, files won't save and you'll need to start again.
 
-Install from there. Full installation instructions are in that repo.
+**File storage:** Put your selected folder inside Dropbox, Google Drive, or another cloud sync service so your files are backed up and accessible from any machine.
 
-> **Important:** Bootstrap must be run inside a Cowork project with a folder selected. If you run it from a general Claude conversation, files won't save and you'll need to start again. If you're unsure whether you're in a project, check the top of the Cowork window — you should see your selected folder name.
-
-**File storage:** Your OS files live in whatever folder you selected when setting up Cowork. For safety, put that folder inside Dropbox, Google Drive, or another cloud sync service — that way your files are backed up and accessible from any machine.
+Full setup guide → [BoS-OS-Start](https://github.com/BoSMark/BoS_OS_Start)
 
 ---
 
@@ -55,7 +69,7 @@ Your OS is built around documents called **RFCs** (short for Request for Comment
 
 ## Your first 90 minutes after Bootstrap
 
-Bootstrap produces a lot. Don't try to process it all at once. Do these four things before anything else:
+Check your `BOOTSTRAP_SUMMARY.md` first — it tells you exactly what to do next. Then:
 
 1. Read your CLAUDE.md and correct anything that's wrong — pay particular attention to tone and terminology
 2. Read your Values RFC and adjust it to sound like you, not like a consultant wrote it
